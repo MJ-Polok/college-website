@@ -8,14 +8,14 @@ import GalleryPage from "../pages/GalleryPage";
 import UnderConstructionPage from "../pages/UnderConstructionPage";
 import NotFoundPage from "../pages/NotFoundPage";
 
-const FEATURES = {
-    historyIntroduction: false,
-    administrativeStructure: false,
-    aimsObjectives: false,
-    departments: false,
-    academic: false,
-    contact: false,
-};
+// const FEATURES = {
+//     historyIntroduction: false,
+//     administrativeStructure: false,
+//     aimsObjectives: false,
+//     departments: false,
+//     academic: false,
+//     contact: false,
+// };
 
 const AppRoutes = () => {
     return (
@@ -26,12 +26,12 @@ const AppRoutes = () => {
             <Route path="/admission" element={<AdmissionPage />} />
             <Route path="/teachers" element={<TeacherPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/history-introduction" element={FEATURES.historyIntroduction ? <HistoryIntroduction /> : <UnderConstructionPage/>} />
-            <Route path="/administrative-structure" element={FEATURES.administrativeStructure ? <AdministrativeStructure /> : <UnderConstructionPage/>} />
-            <Route path="/aims-objectives" element={FEATURES.aimsObjectives ? <AimsObjectives /> : <UnderConstructionPage/>} />
-            <Route path="/departments" element={FEATURES.departments ? <Departments /> : <UnderConstructionPage/>} />
-            <Route path="/academic" element={FEATURES.departments ? <Academic /> : <UnderConstructionPage/>} />
-            <Route path="/contact" element={FEATURES.departments ? <Contact /> : <UnderConstructionPage/>} />
+            <Route path="/history-introduction" element={<UnderConstructionPage/>} />
+            <Route path="/administrative-structure" element={<UnderConstructionPage/>} />
+            <Route path="/aims-objectives" element={<UnderConstructionPage/>} />
+            <Route path="/departments" element={<UnderConstructionPage/>} />
+            <Route path="/academic" element={<UnderConstructionPage/>} />
+            <Route path="/contact" element={<UnderConstructionPage/>} />
             <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );

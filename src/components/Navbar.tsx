@@ -48,9 +48,9 @@ const Navbar = () => {
     }, []);
 
     const overlayVariants = {
-        closed: { x: "100%", transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] } },
-        opened: { x: 0, transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] } }
-    };
+    closed: { x: "100%", transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] as const } },
+    opened: { x: 0, transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] as const } }
+};
 
     const subMenuVariants = {
         closed: { height: 0, opacity: 0, overflow: "hidden" },
