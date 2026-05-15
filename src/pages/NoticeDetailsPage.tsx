@@ -23,7 +23,7 @@ const NoticeDetailsPage = () => {
                         লিংকটি ভুল হতে পারে।
                     </p>
                     <Link
-                        to="/notice"
+                        to="/notice-archive"
                         className="font-body-bn mt-8 inline-block text-[#7A1E4D] hover:text-[#5C173A] transition-colors"
                     >
                         প্রচ্ছদে ফিরুন
@@ -45,7 +45,7 @@ const NoticeDetailsPage = () => {
                         অনুগ্রহ করে প্রথম দুটি নোটিশের বিস্তারিত দেখার অনুরোধ রইল।
                     </p>
                     <Link
-                        to="/notice"
+                        to="/notice-archive"
                         className="font-body-bn mt-8 inline-block text-[#7A1E4D] hover:text-[#5C173A] transition-colors"
                     >
                         সব নোটিশে ফিরুন
