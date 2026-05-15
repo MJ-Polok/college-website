@@ -134,12 +134,12 @@ const Navbar = () => {
 
             <AnimatePresence>
                 {mobileOpen && (
-                    <motion.div initial="closed" animate="opened" exit="closed" variants={overlayVariants} className="fixed inset-0 z-50 bg-[#5C173A]  flex flex-col pt-32 px-6 ">
+                    <motion.div initial="closed" animate="opened" exit="closed" variants={overlayVariants} className="fixed overflow-y-auto inset-0 z-50 bg-[#5C173A] flex flex-col pt-30 px-6 ">
                         <motion.nav className="container-college flex flex-col">
                             {NAV.map((item) => (
                                 <motion.div key={item.label} className="border-b border-[#FFF9EF]/10 py-2">
                                     <div className="flex items-center justify-between">
-                                        <a href={item.href} onClick={() => { setMobileOpen(false); setMobileDropdown(null); }} className="font-body-bn py-3 text-2xl text-[#FFF9EF]">
+                                        <a href={item.href} onClick={() => { setMobileOpen(false); setMobileDropdown(null); }} className="font-body-bn py-3 text-2xl text-[#FFF9EF] w-full">
                                             {item.label}
                                         </a>
                                         {item.children && (

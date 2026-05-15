@@ -10,7 +10,7 @@ export const NAV: NavItem[] = [
             { label: "অধ্যক্ষের বাণী", href: "/#principal" },
             { label: "লক্ষ্য ও উদ্দেশ্য", href: "/aims-objectives" },
             { label: "প্রশাসনিক কাঠামো", href: "/administrative-structure" },
-            { label: "ক্যাম্পাস জীবন", href: "#gallery" },
+            { label: "ক্যাম্পাস জীবন", href: "/#gallery" },
         ],
     },
     { label: "নোটিশ", href: "/#notice" },
